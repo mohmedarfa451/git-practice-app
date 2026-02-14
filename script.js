@@ -25,6 +25,9 @@ function addTask() {
         li.classList.toggle("completed");
     });
 
+    deleteBtn.addEventListener("click", function () {
+        taskList.innerHTML = "";
+    });
     li.appendChild(span);
     li.appendChild(deleteBtn);
     taskList.appendChild(li);
